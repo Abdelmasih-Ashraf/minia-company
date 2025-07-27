@@ -1,0 +1,393 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.classHeader {
+    display: flex;
+    justify-content: space-between;
+    border-top: solid 2px red;
+    background-color: rgb(58, 11, 102);
+    color: white;
+    width: 100%;
+    height: 40px;
+    position: fixed; /* علشان اسبطه واسمه لير */
+    z-index: 99999;
+    align-items: center; /* استخدمها مع الدسبليه فليكس دايما*/
+    padding: 0px 100px;
+}
+
+nav a {
+    text-decoration: none;
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: ease 0.5s;
+}
+
+nav a:hover {
+    color: red;
+    font-size: 22px;
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+.CarsouleSection {
+    background: linear-gradient(
+        to right top ,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.1)
+        ),url(./images/2.jpg) ;
+        
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        align-items: center;
+    color: white;
+}
+
+.CarsouleSection span {
+    color: red;
+    text-transform: capitalize; /*! جديد*/
+}
+
+.CarsouleSection div {
+    margin-left: 30px;
+}
+
+.CarsouleSection a {
+    color: white;
+    text-decoration: none;
+    background-color: rgb(58, 11, 102);
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: ease 0.5s;
+}
+.CarsouleSection a:hover {
+    background-color: red;
+    /* font-size: 20px; */
+    transform: scale(1.1); /*!  جديد*/
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+.serviceclass h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.serviceclass .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+.serviceclass .container .card {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px;
+    box-shadow: 3px 3px 6px 0px gray;
+}
+
+.container h3 {
+    color: red;
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.serviceclass .shapeIcone {
+    color: rgb(58, 11,102);
+    margin: 20px 20px;
+    font-size: 40px;
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+/* .Protofilio h2 {
+    text-align: center;
+    margin: 20px 20px;
+    /* border-bottom: solid 1px red; 
+}
+
+.Protofilio {
+    background-color: cadetblue;
+}
+
+.Protofilio .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.Protofilio .container .card {
+    width: 30%;
+    text-align: center;
+    justify-content: space-evenly; /* جديد 
+    gap: 10px; /* جديد 
+}
+
+.card {
+    width: calc(100% / 6 - 10px); /* 6 كروت مع مسافة 
+    border: 5px solid black;
+    /* padding: 10px; 
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+} */
+
+/*! ////////////////////////////////////////////////////  */
+
+.Protofilio {
+    background-color: #2c3e50;
+    text-align: center;
+    color: white;
+}
+
+.Protofilio h2 {
+    border-bottom: 3px solid red;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.Protofilio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.Protofilio .container .card {
+    width: 30%;
+    text-align: center;
+    justify-content: space-evenly; 
+    gap: 10px;
+}
+
+.Protofilio .container .card {
+    overflow: hidden;
+    width: calc(100% / 3 - 10px);
+    border: 5px solid black;
+    /* padding: 10px;  */
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.Protofilio .container .card img {
+    width: 100%;
+    height: 60%;
+    display: block;
+    /* border-radius: 10px; */
+}
+
+.Protofilio .container .card p {
+    font-weight: 900;
+    margin: 50px 10px;
+}
+
+.Protofilio .container .card button {
+    background-color: rgb(58, 11, 102);
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    transition: ease 0.5s;
+}
+
+.Protofilio .container .card button:hover {
+    background-color: red;
+    transform: scale(1.1);
+    font-size: 15px;
+}
+
+
+/*! ////////////////////////////////////////////////////  */
+
+
+.Nti {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Nti .Nti-image {
+    width: 40%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0);
+    margin-top: 10px;
+    margin-right: 30PX;
+    border-radius: 20px;
+}
+
+.Nti .Nti-desc {
+    width: 60%;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+.mem {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url(./images/MinyaBG.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.mem img {
+    width: 16em;
+    height: 16em;
+    border: solid white 1px;
+    border-radius: 100% 0% 67% 33% / 40% 41% 59% 60% ;
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+.maps {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.maps div {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0px 10px 35px 0px rgb(58, 11, 102);
+    height: 100vh;
+}
+
+
+.maps div iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+.contact {
+    /* height: 100vh; */
+    background: #2a2c9b;
+    background: linear-gradient(90deg, rgba(42, 44, 155, 1) 0%, rgba(87, 132, 199, 1) 39%);
+    text-align: center;
+    padding: 100px;
+}
+
+.contact h2 {
+    color: white;
+    border-bottom:dashed  ;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.contact .form {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.contact .form label {
+    position: absolute;
+    top: 30%;
+    left: 5px;
+    pointer-events: none;
+    transition: ease 0.5s;
+}
+
+.contact .form input {
+    width: 100%;
+    border: none;
+    height: 50px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.contact .form input:hover ~label , .contact input:valid ~ label {
+    opacity: 0;
+    top: 4%;
+}
+
+.contact .send {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2a2c9b;
+    color: white;
+    border: none;
+    transition: ease 0.5s;
+    font-size: 15px;
+}
+
+.contact .send:hover {
+    background-color: red;
+    font-size: 20px;
+    transform: scale(1.2);
+    color: black;
+    /* font-weight: 800; */
+}
+
+/*! ////////////////////////////////////////////////////  */
+
+.btn {
+    color: #2a2c9b;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    font-size: 30px;
+    scroll-behavior: smooth;
+}
+
+.btn:hover {
+    color: red;
+}
+
+footer {
+    background-color: #2d2fbb96;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 800;
+    height: 100px;
+    padding-top: 40px;
+}
+
+/* يعمل على المتصفحات المبنية على WebKit مثل Chrome وSafari */
+::-webkit-scrollbar {
+    /* width: 10px; */
+    /* z-index: 99998; */
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(58, 11, 102, 0.642);
+}
+
+::-webkit-scrollbar-thumb {
+    height: 100px;
+    background-color: #d71146;
+    border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
